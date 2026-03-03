@@ -7,6 +7,18 @@
 }
 
 
+:root {
+    --color01: #86342F;
+    --color02: #E9AFA3;
+    --color-footer: #2E4052;
+}
+
+
+body {
+   
+}
+
+
 .cont-initial {
     padding: 10px 20px 10px 20px;
     background-color: #86342F;
@@ -149,6 +161,26 @@
 
 h2 {
     text-align: center;
-    margin: 10px 0px;
-    color: white;
+    padding: 10px;
+    color: black;
 }
+
+
+.cont-principal {
+    background-color: rgb(250, 241, 230);
+}
+
+
+.cont-principal {
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.sobre p {
+    text-align: justify;
+}
+
+
+
