@@ -10,6 +10,7 @@
 :root {
     --color01: #86342F;
     --color02: #E9AFA3;
+    --color-cont: #613F3D;
     --color-footer: #2E4052;
 }
 
@@ -159,7 +160,7 @@ body {
  
 }
 
-h2 {
+h1, h2 {
     text-align: center;
     padding: 10px;
     color: black;
@@ -178,14 +179,22 @@ h2 {
 }
 
 .cont-pizza {
-    background-color: white;
+    background-color: var(--color-cont);
+    color: white;
     padding: 20px;
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
 }
 
-#pizza-img {
+.cont-pizza:not(#pizza01) {
+    margin-top: 10vh;
+}
+
+.img-config {
     border-radius: 10px;
+    width: 320px;
+    height: 213px;
 }
 
 
