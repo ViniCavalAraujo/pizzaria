@@ -177,10 +177,22 @@ h2 {
     padding: 20px;
 }
 
-
-.sobre p {
-    text-align: justify;
+.cont-pizza {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
 }
+
+#pizza-img {
+    border-radius: 10px;
+}
+
+
+.cont-pizza h3, .cont-pizza p {
+    padding: 10px;
+}
+
 
 
 
