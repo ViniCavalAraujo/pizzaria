@@ -125,6 +125,7 @@ body {
     color: white;
 }
 
+/* alterar para position fixed para deixar o menu ativo ao rolar depois */
 .menu {
     display: none;
     flex-direction: column;
@@ -189,6 +190,7 @@ h1, h2 {
 
 .cont-pizza:not(#pizza01) {
     margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .img-config {
