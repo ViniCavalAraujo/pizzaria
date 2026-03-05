@@ -19,7 +19,7 @@
 
 .cont-initial {
     padding: 10px 20px 10px 20px;
-    background-color: #86342F;
+    background-color: var(--color01);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -231,11 +231,32 @@ h1, h2 {
 
 .config-input {
     flex: 1 1 150px;
-    padding: 5px;
+    padding: 10px;
 }
 
 #formulario {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.cont-info {
+    padding: 10px;
+}
+
+
+.btn {
+    padding: 10px;
+    color: white;
+    background-color: var(--color01);
+    font-weight: bold;
+}
+
+.text-msg {
+    text-indent: 8px;
+    padding: 5px;
+}
+
+.btn:hover {
+    background-color: var(--color02);
 }
