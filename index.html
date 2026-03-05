@@ -158,9 +158,28 @@
             </div>
             <form action="" id="formulario">
                 <div id="nome-form">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
+                    <label for="nome" class="config-label">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome" class="config-input">
                 </div>
+
+                <div id="email-form">
+                    <label for="email" class="config-label">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail" class="config-input">
+                </div>
+
+                <div id="telefone-form">
+                    <label for="telefone" class="config-label">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" class="config-input" placeholder="Telefone">
+                </div>
+
+                <select name="info" id="info">
+                    <option value="">Informações</option>
+                    <option value="">Reclamações</option>
+                    <option value="">Sugestões</option>
+                </select>
+                <textarea name="msg" id="msg" placeholder="Mensagem" rows="10"></textarea>
+
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>

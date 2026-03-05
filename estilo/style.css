@@ -225,8 +225,17 @@ h1, h2 {
 }
 
 
-#nome-form input{
-    flex-basis: 150px;
-    flex-shrink: 1;
-    flex-grow: 1;
+.config-label {
+    display: none;
+}
+
+.config-input {
+    flex: 1 1 150px;
+    padding: 5px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
