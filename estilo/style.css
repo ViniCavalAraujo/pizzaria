@@ -220,4 +220,13 @@ h1, h2 {
 
 
 
+#formulario div {
+    display: flex;
+}
 
+
+#nome-form input{
+    flex-basis: 150px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
