@@ -88,7 +88,7 @@ body {
 
 
 .cont-menu {
-   height: 219px;
+   height: 340px;
    display: flex;
    flex-flow: column nowrap;  
    background: url(../imagens/pizza.jpg);
@@ -111,9 +111,14 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    
+    height: 65px;
     background: rgba(0, 0, 0, 0.126);
 }
+
+.logo img{
+   width: 110px;
+   z-index: 10;
+} 
 
 .cont-hamburguer {
     padding: 10px;
@@ -129,12 +134,13 @@ body {
     padding: 5px;
     border-radius: 50%;
     color: white;
+    z-index: 10;
 }
 
 /* alterar para position fixed para deixar o menu ativo ao rolar depois */
 .menu {
     position: fixed;
-    top: 13%;
+    top: 110px;
     left: 0;
     width: 100%;
     background-color: white;
@@ -142,9 +148,11 @@ body {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
+    
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    z-index: 10;
 }
 
 .itens-menu {
@@ -152,8 +160,7 @@ body {
 }
 
 .menu.ativo {
-    opacity: 1;
-    visibility: visible;
+    max-height: 300px;
 }
 
 .menu ul {
