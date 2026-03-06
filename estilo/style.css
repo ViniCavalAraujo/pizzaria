@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "florilane";
+    src: url(../fontes/Florilane\ Cardillac.ttf);
+    font-weight: bold;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -15,6 +21,9 @@
 }
 
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 .cont-initial {
@@ -125,9 +134,26 @@
 /* alterar para position fixed para deixar o menu ativo ao rolar depois */
 .menu {
     position: fixed;
-    top: 100px;
+    top: 13%;
+    left: 0;
     width: 100%;
     background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.itens-menu {
+    width: 100%;
+}
+
+.menu.ativo {
+    opacity: 1;
+    visibility: visible;
 }
 
 .menu ul {
@@ -154,7 +180,16 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
- 
+    
+}
+
+.cont-titulo {
+    text-align: center;
+}
+
+.cont-titulo h1, .cont-titulo p {
+    color: white;
+    font-weight: bold;
 }
 
 h1, h2 {
@@ -173,6 +208,11 @@ h1, h2 {
     max-width: 450px;
     margin: auto;
     padding: 20px;
+}
+
+.cardapios {
+    font-family: "florilane", Arial, Helvetica, sans-serif;
+    font-size: 2em;
 }
 
 .cont-pizza {
