@@ -177,6 +177,9 @@ body {
     align-items: center;
 }
 
+.itens-menu a:focus-visible {
+    outline: none;
+}
 
 .menu.ativo {
     /* quando o menu abre cresce até 300px */
