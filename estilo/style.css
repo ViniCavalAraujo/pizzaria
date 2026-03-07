@@ -21,6 +21,10 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -60,7 +64,7 @@ body {
     transition: 0.3s;
 }
 
-/* */
+
 #insta:hover {
     fill: url(#instaGradient);
 }
@@ -113,7 +117,11 @@ body {
     justify-content: space-between;
     height: 65px;
     background: rgba(0, 0, 0, 0.126);
+    position: relative;
+    top: 0;
+    width: 100%;
 }
+
 
 .logo img{
    width: 110px;
@@ -137,10 +145,10 @@ body {
     z-index: 10;
 }
 
-/* alterar para position fixed para deixar o menu ativo ao rolar depois */
+
 .menu {
-    position: fixed;
-    top: 110px;
+    position: absolute;
+    top: 65px;
     left: 0;
     width: 100%;
     background-color: white;
@@ -148,11 +156,11 @@ body {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-    z-index: 10;
+    /* fase inicial do menu */
+    max-height: 0; /* altura máxima de 0 */
+    overflow: hidden; /* esconde o menu */
+    transition: max-height 0.4s ease; /* transição suave para quando o menu for aberto */
+    z-index: 10; /* menu fica numa camada maior */
 }
 
 .itens-menu {
@@ -160,6 +168,7 @@ body {
 }
 
 .menu.ativo {
+    /* quando o menu abre cresce até 300px */
     max-height: 300px;
 }
 
@@ -187,11 +196,15 @@ body {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    
+}
+
+.menu a:hover {
+    color: red;
 }
 
 .cont-titulo {
     text-align: center;
+    z-index: 1;
 }
 
 .cont-titulo h1, .cont-titulo p {
