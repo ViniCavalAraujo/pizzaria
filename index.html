@@ -73,7 +73,7 @@
              <nav id="itens" class="menu">
                         <ul class="itens-menu">
                             <li>
-                                <a href="#">Sobre nós</a>
+                                <a href="#" onclick="fecharMenu()">Sobre nós</a>
                             </li>
                             <li>
                                 <a href="#">Faça seu pedido</a>
@@ -216,6 +216,14 @@
             } else {
                 icone.textContent = "menu"
             }
+        }
+
+        function fecharMenu() {
+            const menu = document.getElementById("itens")
+            const icone = document.getElementById("icone-menu")
+
+            menu.classList.remove("ativo")
+            icone.textContent = "menu"
         }
     </script>
 </body>

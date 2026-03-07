@@ -20,6 +20,8 @@
     --color-footer: #2E4052;
 }
 
+/* adicionar funcionalidade de ao clicar em algum item do menu ele fechar também */
+
 
 html {
     scroll-behavior: smooth;
@@ -163,9 +165,10 @@ body {
     z-index: 10; /* menu fica numa camada maior */
 }
 
-.itens-menu {
+.itens-menu, .itens-menu a{
     width: 100%;
 }
+
 
 .menu.ativo {
     /* quando o menu abre cresce até 300px */
