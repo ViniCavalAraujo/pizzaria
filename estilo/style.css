@@ -181,6 +181,10 @@ body {
     outline: none;
 }
 
+.itens-menu a:active {
+    background-color: white;
+}
+
 .menu.ativo {
     /* quando o menu abre cresce até 300px */
     max-height: 300px;
