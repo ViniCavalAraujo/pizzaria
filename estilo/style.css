@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Tangerine:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Sriracha&family=Tangerine:wght@400;700&display=swap');
 
 @font-face {
@@ -11,14 +11,9 @@
 
 
 
-.cont-pizza h3 {
-       font-family: "Italianno", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.cont-pizza p {
-    font-family: "Italianno", cursive;
+.cont-pizza p, .cont-pizza h3 {
+    font-family: "Tangerine", cursive;
   font-weight: 400;
   font-style: normal;
 }
