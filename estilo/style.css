@@ -264,11 +264,18 @@ h1, h2 {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.46);
 }
 
-.cont-pizza:not(#pizza01) {
+/* margin acima e abaixo dos cards exceto no primeiro card */
+.cont-pizza:not(#pizza-combo) {
     margin-top: 10vh;
     margin-bottom: 10vh;
+}
+
+.cont-pizza p {
+    text-align: center;
 }
 
 .img-config {
