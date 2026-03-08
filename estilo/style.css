@@ -182,9 +182,6 @@ body {
     outline:2px solid #b03a2e;
 }
 
-.itens-menu a:active {
-    background-color: red;
-}
 
 .menu.ativo {
     /* quando o menu abre cresce até 300px */
