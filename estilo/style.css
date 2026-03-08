@@ -178,7 +178,7 @@ body {
      -webkit-tap-highlight-color: transparent;
 }
 
-.itens-menu a:focus-visible {
+.itens-menu a:focus {
     outline:2px solid #b03a2e;
 }
 
