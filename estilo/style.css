@@ -175,12 +175,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-     -webkit-tap-highlight-color: red;
+     -webkit-tap-highlight-color: transparent;
 }
 
+.itens-menu a:focus-visible {
+    outline:2px solid #b03a2e;
+}
 
 .itens-menu a:active {
-    background-color: white;
+    background-color: red;
 }
 
 .menu.ativo {
