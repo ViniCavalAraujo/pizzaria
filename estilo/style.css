@@ -249,6 +249,8 @@ body {
 }
 
 .btn-header {
+    position: relative;
+    overflow: hidden;
     background-color: var(--color01);
     border: 3px solid white;
     padding: 12px;
@@ -256,6 +258,18 @@ body {
     color: white;
     width: 80%;
     text-decoration: none;
+}
+
+.btn-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent,rgba(255,255,255,0.6),transparent);
+    animation: brilho 1s linear infinite;
+    transform: skewX(-25deg);
 }
 
 .btn-header:focus {
@@ -354,27 +368,12 @@ h1, h2 {
   content: "";
   position: absolute;
   top: 0;
-  left: -80%;
+  left: -100%;
   width: 20%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,0.6),
-    transparent
-  );
+  background: linear-gradient(120deg, transparent,rgba(255,255,255,0.6),transparent);
   transform: skewX(-25deg); /* inclina o brilho */
-  animation: brilho 1.5s linear infinite;
-}
-
-/* animação contínua */
-@keyframes brilho {
-  0%{
-    left: -100%;
-  }
-  100%{
-    left: 100%;
-  }
+  animation: brilho 1s linear infinite;
 }
 
 #fale-conosco {
@@ -440,4 +439,15 @@ h1, h2 {
 
 .btn:hover {
     background-color: var(--color02);
+}
+
+
+/* animação contínua do botão "fazer pedido" */
+@keyframes brilho {
+  0%{
+    left: -100%;
+  }
+  100%{
+    left: 100%;
+  }
 }
