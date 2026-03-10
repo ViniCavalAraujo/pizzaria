@@ -28,7 +28,7 @@
     --color-footer: #2E4052;
 }
 
-/* adicionar funcionalidade de ao clicar em algum item do menu ele fechar também */
+/* talvez eu aumente o max-width dos containers para 550px pensar depois */
 
 
 html {
@@ -341,7 +341,8 @@ h1, h2 {
 
 
 .cont-pedido {
-    margin: 20px 0px;
+    margin: -10px 0px 40px 0px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -351,8 +352,6 @@ h1, h2 {
 }
 
 .btn-pedido{
-  position: relative;
-  overflow: hidden;
   padding: 12px;
   background: var(--color01);
   color: white;
@@ -363,22 +362,11 @@ h1, h2 {
   font-weight: bolder;
 }
 
-/* camada do brilho */
-.btn-pedido::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 20%;
-  height: 100%;
-  background: linear-gradient(120deg, transparent,rgba(255,255,255,0.6),transparent);
-  transform: skewX(-25deg); /* inclina o brilho */
-  animation: brilho 1s linear infinite;
-}
 
 #fale-conosco {
     text-align: center;
     padding: 5px;
+    margin-top: 20px;
 }
 
 #form {
@@ -425,11 +413,12 @@ h1, h2 {
 }
 
 
-.btn {
+.btn-form {
     padding: 10px;
     color: white;
     background-color: var(--color01);
     font-weight: bold;
+    border: none;
 }
 
 .text-msg {
@@ -437,12 +426,53 @@ h1, h2 {
     padding: 5px;
 }
 
-.btn:hover {
+.btn-form:hover {
     background-color: var(--color02);
 }
 
+.cont-footer {
+    background-color: var(--color-footer);
+    max-width: 450px;
+    margin: auto;
+}
 
-/* animação contínua do botão "fazer pedido" */
+.footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 450px;
+    margin: auto;
+    color: rgb(207, 207, 207);
+}
+
+
+.cont-final-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.logos.logos-footer {
+    justify-content: center;
+}
+
+.logo.logo-footer {
+    display: block;
+    margin: auto;
+    height: 50px;
+}
+
+.link-vini {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* animação contínua do botão "peça agora" do header */
 @keyframes brilho {
   0%{
     left: -100%;
