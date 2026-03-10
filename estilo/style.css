@@ -114,7 +114,12 @@ body {
    position: relative;
 }
 
-.cont-menu::after {
+.cont-menu.cont-sobre {
+    background: none;
+    background-color: #5D3230;
+}
+
+.cont-menu::after:not(.cont-sobre) {
     content: "";
     position: absolute;
     inset: 0;
@@ -122,15 +127,21 @@ body {
     pointer-events: none;
 }
 
+
+
 .topo-menu {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     height: 65px;
-    background: rgba(0, 0, 0, 0.126);
+    background-color: rgba(0, 0, 0, 0.126);
     position: relative;
     top: 0;
     width: 100%;
+}
+
+.topo-sobre {
+    background-color: white;
 }
 
 
@@ -238,7 +249,7 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /* se retirar o botão fica maior */
+    align-items: center; 
     gap: 10px;
 }
 
@@ -247,6 +258,16 @@ body {
     color: white;
     font-weight: bold;
 }
+
+
+
+.titulo-sobre {
+    padding: 20px;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+}
+
 
 .btn-header {
     position: relative;
@@ -279,12 +300,6 @@ body {
 
 
 
-h1, h2 {
-    text-align: center;
-    padding: 10px;
-    color: black;
-}
-
 
 .cont-principal {
     background-color: rgb(250, 241, 230);
@@ -297,8 +312,18 @@ h1, h2 {
     padding: 20px;
 }
 
+.principal-sobre {
+    padding: 30px;
+    line-height: 2em;
+}
+
 .sobre {
     margin: 10px 20px 20px 20px;
+}
+
+.sobre h2 {
+    text-align: center;
+    padding: 20px;
 }
 
 .cardapios {
