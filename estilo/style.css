@@ -260,11 +260,14 @@ body {
     font-weight: bold;
 }
 
-
+p {
+    color: #7A7A7A
+;
+}
 
 .titulo-sobre {
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
     color: white;
     text-align: center;
     font-family: "Tangerine", Arial, Helvetica, sans-serif;
