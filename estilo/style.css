@@ -24,6 +24,7 @@
 :root {
     --color01: #86342F;
     --color02: #E9AFA3;
+    --color03: #5D3230;
     --color-cont: #613F3D;
     --color-footer: #2E4052;
 }
@@ -116,7 +117,7 @@ body {
 
 .cont-menu.cont-sobre {
     background: none;
-    background-color: #5D3230;
+    background-color: var(--color03);
 }
 
 .cont-menu::after:not(.cont-sobre) {
@@ -141,7 +142,7 @@ body {
 }
 
 .topo-sobre {
-    background-color: white;
+    background-color: var(--color03);
 }
 
 
@@ -266,7 +267,10 @@ body {
     margin-top: 40px;
     color: white;
     text-align: center;
+    font-family: "Tangerine", Arial, Helvetica, sans-serif;
+    font-size: 2em;
 }
+
 
 
 .btn-header {
@@ -326,6 +330,14 @@ body {
     padding: 20px;
 }
 
+.tradicao-titulo {
+    font-family: "Tangerine", Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
 .cardapios {
     font-family: "Tangerine", Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -357,6 +369,7 @@ body {
 .img-config {
     border-radius: 10px;
     width: 100%;
+  
 }
 
 
