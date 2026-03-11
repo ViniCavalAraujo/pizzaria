@@ -260,10 +260,7 @@ body {
     font-weight: bold;
 }
 
-p {
-    color: #7A7A7A
-;
-}
+
 
 .titulo-sobre {
     padding: 20px;
@@ -319,6 +316,12 @@ p {
     padding: 20px;
 }
 
+.cont-principal p {
+    color: #757575;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
 .principal-sobre {
     padding: 30px;
     line-height: 2em;
@@ -341,6 +344,19 @@ p {
     margin: 10px 0px;
 }
 
+.titulo-cardapio {
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo-tradicao {
+    text-align: center;
+    font-family: "Tangerine", Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
 .cardapios {
     font-family: "Tangerine", Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -361,6 +377,10 @@ p {
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.40);
     text-align: center;
+}
+
+.cont-pizza p {
+    color: white;
 }
 
 /* margin acima e abaixo dos cards, exceto no primeiro card */
