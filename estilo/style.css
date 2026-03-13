@@ -424,6 +424,93 @@ body {
 }
 
 
+.cont-contato {
+    padding: 20px;
+}
+
+.cont-telefones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tel-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tel-contato a {
+    text-decoration: none;
+    padding: 12px 10px 12px 10px;
+    color: white;
+    background-color: var(--color-footer);
+    border-radius: 20px;
+    margin: auto auto 10px auto;
+    text-align: center;
+    width: 150px;
+}
+
+
+.wpp-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    background-color: rgb(6, 172, 6);
+    width: 150px;
+    margin: auto;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.wpp-contato a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.email-contato {
+    padding: 14px 10px 14px 10px;
+    margin: 12px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-contato a {
+    text-decoration: none;
+    color: black;
+}
+
+.endereco {
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.atendimento {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.atendimento p {
+    color: black;
+}
+
 #fale-conosco {
     text-align: center;
     padding: 5px;
@@ -446,8 +533,6 @@ body {
 #cont-nome label, #cont-email label, #cont-tel label, #cont-info label, #cont-mensagem label {
     display: none;
 }
-
-
 
 #formulario div {
     display: flex;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza</title>
+    <title>Sugestões</title>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
@@ -73,7 +73,7 @@
              <nav id="itens" class="menu">
                         <ul class="itens-menu">
                             <li>
-                                <a href="#" onclick="fecharMenu()">Home</a>
+                                <a href="index.html" onclick="fecharMenu()">Home</a>
                             </li>
                             <li>
                                 <a href="sobre.html" onclick="fecharMenu()">Sobre nós</a>
@@ -86,7 +86,7 @@
                                 <a href="#fale-conosco" onclick="fecharMenu()">Sugestões</a>
                             </li>
                             <li>
-                                <a href="contato.html" onclick="fecharMenu()">Contato</a>
+                                <a href="#" onclick="fecharMenu()">Contato</a>
                             </li>
                         </ul>
             </nav>
@@ -102,89 +102,51 @@
     </header>
 
 
-    <main class="main">
+    <main>
         <section class="cont-principal">
-            <section class="sobre">
-                <!-- mudar esse texto depois -->
-                <h2 class="titulo">Sobre nós</h2>
-                <p>
-                    Somos apaixonados por pizza e por reunir pessoas em volta de uma boa refeição. 
-                    Usamos ingredientes selecionados e massa artesanal para entregar sabor e qualidade em cada pedaço.
-                </p>
-            </section>
-            
-            <section class="cardapios">
-                <h2 class="titulo-cardapio">Cardápio</h2>
-                <div class="cont-pizza" id="pizza-combo">
-                    <img src="imagens/pizza-m.jpg" alt="" class="img-config">
-                    <h3>Pizza Combo</h3>
-                    <p>
-                        Uma combinação especial de sabores para quem gosta de variedade. 
-                        Perfeita para dividir e experimentar diferentes ingredientes em uma só pizza.
-                    </p>
+
+                <div class="cont-contato">
+
+                    <div class="cont-telefones">
+                        <div class="tel-contato">
+                            <span>
+                                <strong>Telefone:</strong>
+                            </span>
+                            <a href="#">(00) 4002-8922</a>
+                        </div>
+                        
+                        <div class="wpp-contato">
+                            <img src="imagens/logowpp.png" alt="">
+                            <a href="https://wa.me/5511999999999" target="_blank" rel="external">21021020</a>
+                        </div>
+                    </div>
+
+                    <div class="email-contato">
+                        <span>
+                            <strong>E-mail:</strong>
+                        </span>
+                        <a href="">pizzariavn@hotmail.com</a>
+                    </div>
+                    <div class="endereco">
+                        <span>
+                            <strong>Endereço:</strong>
+                        </span>
+                        <!--talvez coloque alguns ícones no e-mail, endereço e horários tipo calendário s-->
+                        <address>Avenida Joãozinho, 123 - São Paulo</address>
+                    </div>
+                    <div class="atendimento">
+                        <h3>Atendimento</h3>
+                         <p>Seg - Qui</p>
+                        <p>11:00 - 21:00</p>
+                        <p>Sex - Sab</p>
+                        <p>11:00 - 23:00</p>
+                        <p>Dom</p>
+                        <p>12:00 - 21:00</p>
+                    </div>
                 </div>
 
-                <div class="cont-pizza">
-                    <img src="imagens/pizzaqueijo-m.jpg" alt="" class="img-config">
-                    <h3>Pizza Mussarela</h3>
-                    <p>
-                        Clássica e irresistível. Molho de tomate, bastante mussarela derretida 
-                        e um toque de orégano sobre nossa massa artesanal.
-                    </p>
-                </div>
 
-                <div class="cont-pizza">
-                    <img src="imagens/pizzafrango-m.jpg" alt="" class="img-config">
-                    <h3>Pizza de Frango com Catupiry</h3>
-                    <p>
-                        Frango desfiado bem temperado com a cremosidade do Catupiry, 
-                        formando uma pizza equilibrada e muito saborosa.
-                    </p>
-                </div>
-
-                <div class="cont-pizza">
-                    <img src="imagens/pizza-atum-m.jpg" alt="" id="calabresa-img" class="img-config">
-                    <h3>Pizza de Atum</h3>
-                    <p>
-                        Atum selecionado com molho de tomate e cebola, 
-                        criando um sabor marcante e delicioso.
-                    </p>
-                </div>
-
-                <div class="cont-pizza">
-                    <img src="imagens/pizza-portuguesa-m.jpg" alt="" class="img-config" id="portuguesa-img">
-                    <h3>Pizza Portuguesa</h3>
-                    <p>
-                        Uma mistura completa de presunto, ovos, cebola, ervilha e mussarela, 
-                        trazendo o sabor tradicional da pizza portuguesa.
-                    </p>
-                </div>
-
-               <div class="cont-pizza">
-                    <img src="imagens/pizza-doce-m.jpg" alt="" class="img-config" id="portuguesa-img">
-                    <h3>Pizza Doce de Nutella</h3>
-                    <p>
-                        Massa quentinha coberta com generosas camadas de Nutella, 
-                        uma opção perfeita para quem ama um doce.
-                    </p>
-                </div>
-
-                <div class="cont-pizza">
-                    <img src="imagens/pizza-combo-m.jpg" alt="" class="img-config" id="portuguesa-img">
-                    <h3>Combo Doce + Calabresa</h3>
-                    <p>
-                        A combinação perfeita entre doce e salgado: pizza de calabresa 
-                        e uma deliciosa pizza doce para completar.
-                    </p>
-                </div>
-                <div class="cont-pedido">
-                    <!--colocar um efeito brilhante/animação em volta do botão -->
-                    <h3>Gostou de alguma?</h3>
-                    <a href="#" class="btn-pedido">FAZER PEDIDO</a>
-                </div>
-            </section>
-        <!--
-        <div id="fale-conosco">
+            <div id="fale-conosco">
                 <h3>Fale Conosco</h3>
             </div>
             <form action="#" id="formulario">
@@ -211,7 +173,7 @@
                 <textarea name="msg" id="msg" placeholder="Mensagem" rows="10" class="text-msg" required></textarea>
 
                 <button type="submit" class="btn-form">Enviar</button>
-            </form> -->
+            </form>
         </section>
     </main>
 
