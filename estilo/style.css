@@ -439,6 +439,14 @@ body {
     gap: 10px;
 }
 
+.nome-pedido input, .tel-pedido input {
+    padding: 4px;
+}
+
+.nome-pedido label, .tel-pedido label {
+    display: none;
+}
+
 .cont-contato {
     padding: 20px;
 }
