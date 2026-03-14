@@ -424,6 +424,21 @@ body {
 }
 
 
+.form-pedido {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--color02);
+  
+}
+
+.pizza-combo, .pizza-mussarela, .pizza-frango, .pizza-atum, .pizza-portugesa, .pizza-nutella, .combo-doce {
+    display: flex;
+    gap: 10px;
+}
+
 .cont-contato {
     padding: 20px;
 }
@@ -567,13 +582,25 @@ body {
     border: none;
 }
 
+.btn-form:hover {
+    background-color: var(--color02);
+}
+
+.final-pedido {
+    padding: 10px;
+    color: white;
+    background-color: var(--color01);
+    font-weight: bold;
+    border: none;
+}
+
+.final-pedido:focus {
+    background-color: var(--color-cont);
+}
+
 .text-msg {
     text-indent: 8px;
     padding: 5px;
-}
-
-.btn-form:hover {
-    background-color: var(--color02);
 }
 
 .cont-footer {

@@ -104,86 +104,50 @@
 
     <main class="main">
         <section class="cont-principal">
-            <section class="sobre">
-                <!-- mudar esse texto depois -->
-                <h2 class="titulo">Sobre nós</h2>
-                <p>
-                    Somos apaixonados por pizza e por reunir pessoas em volta de uma boa refeição. 
-                    Usamos ingredientes selecionados e massa artesanal para entregar sabor e qualidade em cada pedaço.
-                </p>
-            </section>
-            
-            <section class="cardapios">
-                <h2 class="titulo-cardapio">Cardápio</h2>
-                <div class="cont-pizza" id="pizza-combo">
-                    <img src="imagens/pizza-m.jpg" alt="" class="img-config">
-                    <h3>Pizza Combo</h3>
-                    <p>
-                        Uma combinação especial de sabores para quem gosta de variedade. 
-                        Perfeita para dividir e experimentar diferentes ingredientes em uma só pizza.
-                    </p>
+
+
+            <form action="#" method="post" class="form-pedido">
+                <legend>
+                    <strong>Faça seu pedido</strong>
+                </legend>
+
+                <div class="pizza-combo">
+                    <label for="combo">Pizza Combo</label>
+                    <input type="checkbox" name="combo" id="combo">
                 </div>
 
-                <div class="cont-pizza">
-                    <img src="imagens/pizzaqueijo-m.jpg" alt="" class="img-config">
-                    <h3>Pizza Mussarela</h3>
-                    <p>
-                        Clássica e irresistível. Molho de tomate, bastante mussarela derretida 
-                        e um toque de orégano sobre nossa massa artesanal.
-                    </p>
+                <div class="pizza-mussarela">
+                    <label for="mussa">Mussarela</label>
+                    <input type="checkbox" name="mussa" id="mussa">
                 </div>
 
-                <div class="cont-pizza">
-                    <img src="imagens/pizzafrango-m.jpg" alt="" class="img-config">
-                    <h3>Pizza de Frango com Catupiry</h3>
-                    <p>
-                        Frango desfiado bem temperado com a cremosidade do Catupiry, 
-                        formando uma pizza equilibrada e muito saborosa.
-                    </p>
+                <div class="pizza-frango">
+                    <label for="frango">Frango com Catupiry</label>
+                    <input type="checkbox" name="frango" id="frango">
                 </div>
 
-                <div class="cont-pizza">
-                    <img src="imagens/pizza-atum-m.jpg" alt="" id="calabresa-img" class="img-config">
-                    <h3>Pizza de Atum</h3>
-                    <p>
-                        Atum selecionado com molho de tomate e cebola, 
-                        criando um sabor marcante e delicioso.
-                    </p>
+                <div class="pizza-atum">
+                    <label for="atum">Atum</label>
+                    <input type="checkbox" name="atum" id="atum">
                 </div>
 
-                <div class="cont-pizza">
-                    <img src="imagens/pizza-portuguesa-m.jpg" alt="" class="img-config" id="portuguesa-img">
-                    <h3>Pizza Portuguesa</h3>
-                    <p>
-                        Uma mistura completa de presunto, ovos, cebola, ervilha e mussarela, 
-                        trazendo o sabor tradicional da pizza portuguesa.
-                    </p>
+                <div class="pizza-portuguesa">
+                    <label for="port">Portuguesa</label>
+                    <input type="checkbox" name="port" id="port">
                 </div>
 
-               <div class="cont-pizza">
-                    <img src="imagens/pizza-doce-m.jpg" alt="" class="img-config" id="portuguesa-img">
-                    <h3>Pizza Doce de Nutella</h3>
-                    <p>
-                        Massa quentinha coberta com generosas camadas de Nutella, 
-                        uma opção perfeita para quem ama um doce.
-                    </p>
+                <div class="pizza-nutella">
+                    <label for="nutella">Doce de Nutella</label>
+                    <input type="checkbox" name="nutella" id="nutella">
                 </div>
 
-                <div class="cont-pizza">
-                    <img src="imagens/pizza-combo-m.jpg" alt="" class="img-config" id="portuguesa-img">
-                    <h3>Combo Doce + Calabresa</h3>
-                    <p>
-                        A combinação perfeita entre doce e salgado: pizza de calabresa 
-                        e uma deliciosa pizza doce para completar.
-                    </p>
+                <div class="combo-doce">
+                    <label for="combodoce">Doce + Calabresa</label>
+                    <input type="checkbox" name="combodoce" id="combodoce">
                 </div>
-                <div class="cont-pedido">
-                    <!--colocar um efeito brilhante/animação em volta do botão -->
-                    <h3>Gostou de alguma?</h3>
-                    <a href="#" class="btn-pedido">FAZER PEDIDO</a>
-                </div>
-            </section>
-       
+
+                <button type="submit" class="final-pedido">Finalizar pedido</button>
+            </form>
         </section>
     </main>
 
