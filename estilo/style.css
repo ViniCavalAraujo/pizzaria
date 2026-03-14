@@ -302,21 +302,26 @@ body {
     color: white;
 }
 
-
-.cont-principal {
-    background-color: rgb(250, 241, 230);
-}
-
-
 .cont-principal {
     max-width: 450px;
     margin: auto;
+    background-color: rgb(250, 241, 230);
 }
 
 .cont-principal p {
     color: #757575;
     padding: 10px;
     margin: 5px 0px;
+}
+
+#cont-home {
+    background-color: var(--color-cont);
+    color: white;
+}
+
+#cont-home p {
+    color: white;
+    line-height: 1.7em;
 }
 
 .cont-inicio {
@@ -345,7 +350,7 @@ body {
 
 .acesso-sobrenos a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .acesso-cardapio {
@@ -355,7 +360,7 @@ body {
 
 .acesso-cardapio a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
