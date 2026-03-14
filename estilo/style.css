@@ -354,7 +354,7 @@ body {
 }
 
 .acesso-cardapio {
-    padding: 30px;
+    padding: 30px 30px 40px 30px;
     text-align: center;
 }
 
@@ -367,6 +367,7 @@ body {
 .img-home {
     width: 100%;
     height: 400px;
+    margin-bottom: -4px;
     object-fit: cover;
 }
 
