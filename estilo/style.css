@@ -302,26 +302,31 @@ body {
     color: white;
 }
 
+
+.cont-home {
+    max-width: 450px;
+    margin: auto;
+    background-color: var(--color-cont);
+    color: white;
+}
+
+.cont-home p {
+    color: white;
+    line-height: 1.7em;
+}
+
+
 .cont-principal {
     max-width: 450px;
     margin: auto;
     background-color: rgb(250, 241, 230);
+    padding: 20px;
 }
 
 .cont-principal p {
     color: #757575;
     padding: 10px;
     margin: 5px 0px;
-}
-
-#cont-home {
-    background-color: var(--color-cont);
-    color: white;
-}
-
-#cont-home p {
-    color: white;
-    line-height: 1.7em;
 }
 
 .cont-inicio {
@@ -351,6 +356,8 @@ body {
 .acesso-sobrenos a {
     text-decoration: none;
     color: white;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .acesso-cardapio {
@@ -370,6 +377,8 @@ body {
     margin-bottom: -4px;
     object-fit: cover;
 }
+
+
 
 .tradicao-titulo {
     font-family: "Tangerine", Arial, Helvetica, sans-serif;
