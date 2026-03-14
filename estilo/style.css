@@ -319,6 +319,11 @@ body {
     margin: 5px 0px;
 }
 
+.cont-inicio {
+    padding: 20px;
+    text-align: center;
+}
+
 .principal-sobre {
     padding: 30px;
     line-height: 2em;
@@ -328,14 +333,36 @@ body {
     padding: 20px;
 }
 
-.sobre h2 {
+.titulo-home {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+}
+
+.acesso-sobrenos {
+    text-align: center;
+    padding: 30px;
+}
+
+.acesso-sobrenos a {
+    text-decoration: none;
+    color: black;
+}
+
+.acesso-cardapio {
+    padding: 30px;
+    text-align: center;
+}
+
+.acesso-cardapio a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 .img-home {
     width: 100%;
     height: 400px;
+    object-fit: cover;
 }
 
 .tradicao-titulo {
