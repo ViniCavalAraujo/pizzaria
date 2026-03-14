@@ -106,7 +106,7 @@
         <section class="cont-principal">
 
 
-            <form action="#" method="post" class="form-pedido">
+            <form onsubmit="alert('Pedido registrado!')" method="post" class="form-pedido">
                 <legend>
                     <strong>Faça seu pedido</strong>
                 </legend>
@@ -144,6 +144,16 @@
                 <div class="combo-doce">
                     <label for="combodoce">Doce + Calabresa</label>
                     <input type="checkbox" name="combodoce" id="combodoce">
+                </div>
+
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div>
+                    <label for="tel">Telefone</label>
+                    <input type="text" name="tel" id="tel" required>
                 </div>
 
                 <button type="submit" class="final-pedido">Finalizar pedido</button>
@@ -237,6 +247,8 @@
             menu.classList.remove("ativo")
             icone.textContent = "menu"
         }
+
+        
     </script>
 </body>
 </html>
