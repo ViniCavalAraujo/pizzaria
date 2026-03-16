@@ -26,6 +26,7 @@
     --color02: #E9AFA3;
     --color03: #5D3230;
     --color04: rgb(250, 241, 230);
+    --colorp: #757575;
     --color-cont: #613F3D;
     --color-footer: #2E4052;
 }
@@ -312,7 +313,7 @@ body {
 }
 
 .cont-home p {
-    color: var(--color01);
+    color: var(--colorp);
     line-height: 1.7em;
 }
 
