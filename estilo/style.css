@@ -25,6 +25,7 @@
     --color01: #86342F;
     --color02: #E9AFA3;
     --color03: #5D3230;
+    --color04: rgb(250, 241, 230);
     --color-cont: #613F3D;
     --color-footer: #2E4052;
 }
@@ -142,7 +143,7 @@ body {
 }
 
 .topo-sobre {
-    background-color: var(--color03);
+    background-color: var(--color04);
 }
 
 
