@@ -307,12 +307,19 @@ body {
 .cont-home {
     max-width: 450px;
     margin: auto;
-    background-color: var(--color-cont);
+    background-color: var(--color04);
     color: white;
 }
 
+.titulo-home {
+    text-align: center;
+    padding: 10px;
+    color: #757575;
+}
+
+
 .cont-home p {
-    color: white;
+    color: #757575;
     line-height: 1.7em;
 }
 
@@ -344,10 +351,6 @@ body {
     padding: 20px;
 }
 
-.titulo-home {
-    text-align: center;
-    padding: 10px;
-}
 
 .acesso-sobrenos {
     text-align: center;
