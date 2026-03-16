@@ -23,7 +23,7 @@
 
 :root {
     --color01: #86342F;
-    --color02: #E9AFA3;
+    --color02: #592D2C;
     --color03: #5D3230;
     --color04: rgb(250, 241, 230);
     --colorp: #757575;
@@ -313,7 +313,7 @@ body {
 }
 
 .cont-home p {
-    color: #444444;
+    color: var(--colorp);
     line-height: 1.7em;
 }
 
@@ -375,7 +375,7 @@ body {
 
 .acesso-cardapio a {
     text-decoration: none;
-    color: white;
+    color: var(--color01);
     font-weight: bold;
 }
 
@@ -399,6 +399,7 @@ body {
 .titulo-cardapio {
     text-align: center;
     padding: 20px;
+    color: var(--color01);
 }
 
 .titulo-tradicao {
@@ -482,9 +483,24 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    background-color: var(--color02);
+    background-color: var(--color04);
+    color: black;
   
 }
+
+.legend-form {
+    font-size: 1.2em;
+}
+
+/* .background-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    color: black;
+    background-color: var(--color04);
+} */
 
 .pizza-combo, .pizza-mussarela, .pizza-frango, .pizza-atum, .pizza-portugesa, .pizza-nutella, .combo-doce {
     display: flex;
