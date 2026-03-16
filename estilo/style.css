@@ -308,7 +308,7 @@ body {
 .cont-home {
     max-width: 450px;
     margin: auto;
-    background-color: #f3e4d2;
+    background-color: rgb(250, 241, 230);
     color: var(--color01);
 }
 
@@ -420,7 +420,7 @@ body {
 }
 
 .cont-pizza {
-    background-color: var(--color-cont);
+    background-color: #592D2C;
     color: white;
     padding: 20px;
     display: flex;
