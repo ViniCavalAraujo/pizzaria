@@ -307,12 +307,12 @@ body {
 .cont-home {
     max-width: 450px;
     margin: auto;
-    background-color: #FFD6AF;
-    color: #6b2b24;
+    background-color: var(--color04);
+    color: var(--color01);
 }
 
 .cont-home p {
-    color: var(--color03);
+    color: var(--color01);
     line-height: 1.7em;
 }
 
