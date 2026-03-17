@@ -2,9 +2,26 @@
 
 @media (min-width: 768px) {
     .topo-menu {
-        height: 120px;
+        height: 140px;
     }
     .logo img {
-        background-color: red;
+        width: 169px;
+    }
+    .cont-menu {
+        height: 550px;
+    }
+    .cont-titulo {
+        max-width: 550px;
+    }
+    .cont-titulo h1 {
+        font-size: 2.7em;
+        max-width: 330px;
+    }
+    .cont-titulo p {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+    .btn-header {
+        max-width: 280px;
     }
 }

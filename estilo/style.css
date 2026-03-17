@@ -120,20 +120,20 @@ body {
    background-size: cover;
    background-position: center bottom;
    position: relative;
-    overflow: hidden;
+
+}
+
+.cont-menu:not(.cont-sobre)::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.43);
+    pointer-events: none;
 }
 
 .cont-menu.cont-sobre {
     background: none;
     background-color: var(--color03);
-}
-
-.cont-menu::after:not(.cont-sobre) {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.192);
-    pointer-events: none;
 }
 
 
@@ -144,10 +144,11 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 65px;
-    background-color: rgba(0, 0, 0, 0.126);
+    background-color: rgba(0, 0, 0, 0.17);
     position: relative;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .topo-sobre {
@@ -255,19 +256,30 @@ body {
 .cont-titulo {
     text-align: center;
     z-index: 1;
-    max-width: 320px;
+    flex-wrap: wrap;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center; 
     gap: 10px;
+    max-width: 300px;
 }
 
 
 .cont-titulo h1, .cont-titulo p {
     color: white;
     font-weight: bold;
+    margin-bottom: 5px;
 }
+
+.cont-titulo > h1 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.285);
+}
+
+.cont-titulo > p {
+    line-height: 1.4em;
+}
+
 
 
 
@@ -290,8 +302,9 @@ body {
     padding: 12px;
     border-radius: 20px;
     color: white;
-    width: 80%;
+    width: 60%;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 .btn-header::before {
