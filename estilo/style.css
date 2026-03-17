@@ -306,7 +306,7 @@ body {
 
 
 .cont-home {
-    max-width: 450px;
+    max-width: 550px;
     margin: auto;
     background-color: rgb(250, 241, 230);
     color: var(--color01);
@@ -318,8 +318,9 @@ body {
 }
 
 
+
 .cont-principal {
-    max-width: 450px;
+    max-width: 550px;
     margin: auto;
     background-color: rgb(250, 241, 230);
     padding: 20px;
@@ -343,7 +344,7 @@ body {
 
 .sobre {
     padding: 20px;
-    background-color: #592D2C;
+    background-color: var(--color02);
     color: white;
 }
 
