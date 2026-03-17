@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@media (min-width: 768px) {
+    .topo-menu {
+        height: 120px;
+    }
+    .logo img {
+        background-color: red;
+    }
+}
