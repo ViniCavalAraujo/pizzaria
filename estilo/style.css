@@ -90,6 +90,7 @@ body {
 
 #facebook {
   cursor: pointer;
+  transition: 0.3s;
 }
 
 

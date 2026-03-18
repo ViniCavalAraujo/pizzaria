@@ -1,11 +1,26 @@
 @charset "UTF-8";
 
 @media (min-width: 768px) {
+    .cont-initial {
+        height: 50px;
+    }
+    .tel {
+        font-size: 1.1em;
+    }
+    #wpp, #insta, #facebook {
+        width: 24px;
+        height: 24px;
+    }
     .topo-menu {
         height: 140px;
     }
-    .logo img {
-        width: 169px;
+    .logo {
+        /*carrega a imagem média da logo */
+        content: url("../imagens/logo-m.png"); 
+    }
+    #icone-menu {
+        padding: 10px;
+        font-size: 2.2em;
     }
     .cont-menu {
         height: 550px;
@@ -24,4 +39,18 @@
     .btn-header {
         max-width: 280px;
     }
+    .menu {
+        /* ao abrir o menu na tela de tablet posiciona mais abaixo */
+        top: 25%;
+        transition: max-height 0.6s ease;
+    }
+   .menu li {
+        height: 83px;
+   }
+   .menu.ativo {
+    max-height: 500px;
+   }
+   .itens-menu a {
+        font-size: 1.1em;
+   }
 }
