@@ -44,13 +44,35 @@
         top: 25%;
         transition: max-height 0.6s ease;
     }
-   .menu li {
+    .menu li {
         height: 83px;
-   }
-   .menu.ativo {
+    }
+    .menu.ativo {
     max-height: 500px;
-   }
-   .itens-menu a {
+    }
+    .itens-menu a {
         font-size: 1.1em;
-   }
+    }
+    .titulo-home {
+        font-size: 1.8em;
+    }
+    .cont-inicio > p {
+        font-size: 1.1em;
+    }
+    .img-home {
+        height: 550px;
+    }
+    .cont-footer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .logopng-footer {
+        content: url("../imagens/logo-m.png");
+    }
+    .acesso-github {
+       margin-top: 20px;
+    }
+    
 }

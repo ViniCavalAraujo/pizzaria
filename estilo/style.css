@@ -390,9 +390,25 @@ body {
     font-weight: bold;
 }
 
+.cont-img-home {
+    
+    position: relative;
+}
+.cont-img-home::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.479);
+}
 .acesso-cardapio {
     padding: 30px 30px 40px 30px;
     text-align: center;
+}
+
+.acesso-cardapio > h3 {
+    padding: 7px;
+    margin-bottom: 5px;
+    color: var(--colorp);
 }
 
 .acesso-cardapio a {
@@ -701,45 +717,37 @@ body {
     padding: 5px;
 }
 
-.cont-footer {
+footer {
     background-color: var(--color-footer);
-    /* max-width: 550px; */
-    margin: auto;
+    color: #a7a7a7;
+    padding: 10px;
 }
 
-.footer {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 450px;
-    margin: auto;
-    color: rgb(207, 207, 207);
-}
-
-
-.cont-final-footer {
+.cont-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-
-.logos.logos-footer {
-    justify-content: center;
+.cont-local {
+    padding: 10px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.logo.logo-footer {
-    display: block;
-    margin: auto;
-    height: 50px;
+.logos-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.link-vini {
+.acesso-github a {
     text-decoration: none;
+    color: #a7a7a7;
     font-weight: bold;
-    color: white;
 }
 
 
