@@ -108,7 +108,7 @@
         font-size: 3.5em;
     }
     .img-sobrenos {
-        width: 470px;
+        max-width: 470px;
         height: 300px;
     }
 
