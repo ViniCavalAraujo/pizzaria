@@ -82,6 +82,54 @@
     .size {
         font-size: 1.1em;
     }
+    .button-form {
+        width: 200px;
+    }
+    .nome-pedido input, .tel-pedido input {
+        padding: 8px;
+        width: 200px;
+    }
+
+    /* página sobre nós */
+    .titulo-sobre > h1 {
+        padding-bottom: 10px;
+        font-size: 2.2em;
+    }
+    .titulo-sobre > p {
+        padding-top: 10px;
+        font-size: 1.2em;
+    }
+    .historia-article > p {
+        font-size: 1.1em;
+        line-height: 2.2em;
+    }
+    .titulo-tradicao {
+        padding-top: 25px;
+        font-size: 3.5em;
+    }
+    .img-sobrenos {
+        width: 470px;
+        height: 300px;
+    }
+
+    /* body página contato */
+    .text-tel {
+        font-size: 1.2em;
+    }
+    .tel-contato a {
+        padding: 14px 12px 14px 12px;
+        width: 170px;
+    }
+    .wpp-contato {
+        width: 170px;
+        padding: 12px;
+    }
+    .email-contato, .endereco, .atendimento {
+        font-size: 1.1em;
+    }
+    #fale-conosco > h3 {
+        font-size: 1.4em;
+    }
 }
 
 /*config para uma melhor transição das imagens para celular/tablet */
@@ -101,5 +149,17 @@
     }
     .img-config {
         width: 240px;
+    }
+}
+
+/* (headers) permite uma transição suave do texto principal conforme a tela aumenta/diminui */
+@media (min-width: 595px) {
+    .titulo-sobre {
+        max-width: 600px;
+        margin: auto;
+    }
+    .cont-titulo {
+        max-width: 600px;
+        margin: auto;
     }
 }

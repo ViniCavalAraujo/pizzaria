@@ -35,7 +35,7 @@
 
 
 html {
-    /* permite rolamento suave ao descer a página */
+    /* permite rolamento suave ao descer a página quando clica em um link direcionado a um elemento */
     scroll-behavior: smooth;
 }
 
@@ -61,6 +61,7 @@ body {
 .tel {
     text-align: left;
     color: white;
+    font-size: 0.9em;
 }
 
 .logos {
@@ -293,6 +294,13 @@ body {
     font-size: 2em;
 }
 
+.titulo-sobre > h1 {
+    padding-bottom: 10px;
+}
+.titulo-sobre > p {
+    padding-top: 5px;
+}
+
 
 
 .btn-header {
@@ -326,6 +334,21 @@ body {
 }
 
 
+/* seletores utilizado na section de todas as páginas, exceto a home */
+.cont-principal {
+    /* max-width: 550px; */
+    margin: auto;
+    background-color: rgb(250, 241, 230);
+    padding: 20px;
+}
+.cont-principal p {
+    color: #757575;
+    padding: 10px;
+    margin: 5px 0px;
+}
+/* -----------------------------------------------------------------*/
+
+/* body página home */
 .cont-home {
     /* max-width: 550px; */
     margin: auto;
@@ -338,29 +361,32 @@ body {
     line-height: 1.7em;
 }
 
-
-
-.cont-principal {
-    /* max-width: 550px; */
-    margin: auto;
-    background-color: rgb(250, 241, 230);
-    padding: 20px;
-}
-
-.cont-principal p {
-    color: #757575;
-    padding: 10px;
-    margin: 5px 0px;
-}
-
 .cont-inicio {
     padding: 20px;
     text-align: center;
 }
 
-.principal-sobre {
-    padding: 30px;
-    line-height: 2em;
+
+.titulo-home {
+    text-align: center;
+    padding: 10px;
+}
+
+.cont-img-home {
+    position: relative;
+}
+.cont-img-home::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.479);
+}
+
+.img-home {
+    width: 100%;
+    height: 400px;
+    margin-bottom: -4px;
+    object-fit: cover;
 }
 
 .sobre {
@@ -373,10 +399,6 @@ body {
     color: white;
 }
 
-.titulo-home {
-    text-align: center;
-    padding: 10px;
-}
 
 .acesso-sobrenos {
     text-align: center;
@@ -390,16 +412,7 @@ body {
     font-weight: bold;
 }
 
-.cont-img-home {
-    
-    position: relative;
-}
-.cont-img-home::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.479);
-}
+
 .acesso-cardapio {
     padding: 30px 30px 40px 30px;
     text-align: center;
@@ -417,27 +430,14 @@ body {
     font-weight: bold;
 }
 
-.img-home {
-    width: 100%;
-    height: 400px;
-    margin-bottom: -4px;
-    object-fit: cover;
+
+/* body página sobre nós */
+.principal-sobre {
+    padding: 30px;
 }
 
-
-
-.tradicao-titulo {
-    font-family: "Tangerine", Arial, Helvetica, sans-serif;
-    font-size: 3em;
-    text-align: center;
-    padding: 5px;
-    margin: 10px 0px;
-}
-
-.titulo-cardapio {
-    text-align: center;
-    padding: 20px;
-    color: var(--color01);
+.historia-article > p {
+    line-height: 2em;
 }
 
 .titulo-tradicao {
@@ -448,6 +448,21 @@ body {
     margin-top: 10px;
 }
 
+.img-sobrenos {
+    display: block;
+    margin: 20px auto;
+    width: 370px;
+    height: 240px;
+}
+
+
+
+/* body página cardápio */
+.titulo-cardapio {
+    text-align: center;
+    padding: 20px;
+    color: var(--color01);
+}
 .cardapios {
     font-family: "Tangerine", Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -520,7 +535,7 @@ picture {
 }
 
 
-
+/* body página pedido */
 .form-pedido {
     padding: 10px;
     display: flex;
@@ -529,24 +544,13 @@ picture {
     gap: 20px;
     background-color: var(--color04);
     color: black;
-  
 }
 
 .legend-form {
     font-size: 1.2em;
 }
 
-/* .background-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    color: black;
-    background-color: var(--color04);
-} */
-
-.pizza-combo, .pizza-mussarela, .pizza-frango, .pizza-atum, .pizza-portugesa, .pizza-nutella, .combo-doce {
+.form-pedido > div {
     display: flex;
     gap: 10px;
 }
@@ -559,6 +563,25 @@ picture {
     display: none;
 }
 
+.button-form {
+    display: flex;
+}
+
+.final-pedido {
+    padding: 10px;
+    color: white;
+    background-color: var(--color01);
+    font-weight: bold;
+    border: none;
+    flex: 1 1 auto;
+}
+
+.final-pedido:focus {
+    background-color: var(--color-cont);
+}
+
+
+/* body página contato */
 .cont-contato {
     padding: 20px;
 }
@@ -588,7 +611,6 @@ picture {
     width: 150px;
 }
 
-
 .wpp-contato {
     display: flex;
     align-items: center;
@@ -607,8 +629,6 @@ picture {
     text-decoration: none;
     color: white;
 }
-
-
 
 .email-contato {
     padding: 14px 10px 14px 10px;
@@ -635,14 +655,14 @@ picture {
     justify-content: center;
 }
 
-.atendimento {
+.horario-atendimento {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.atendimento p {
+.horario-atendimento p {
     color: black;
 }
 
@@ -652,11 +672,14 @@ picture {
     margin-top: 20px;
 }
 
-#form {
+#formulario-contato {
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
+}
+
+#formulario-contato div {
+    display: flex;
 }
 
 #cont-info {
@@ -669,11 +692,6 @@ picture {
     display: none;
 }
 
-#formulario div {
-    display: flex;
-}
-
-
 .config-label {
     display: none;
 }
@@ -683,16 +701,9 @@ picture {
     padding: 10px;
 }
 
-#formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .cont-info {
     padding: 10px;
 }
-
 
 .btn-form {
     padding: 10px;
@@ -706,32 +717,12 @@ picture {
     background-color: var(--color02);
 }
 
-/* talvez apague amanhã e refaça */
-.button-form {
-    display: flex;
-    max-width: 250px;
-    width: 30%;
-}
-
-
-.final-pedido {
-    padding: 10px;
-    color: white;
-    background-color: var(--color01);
-    font-weight: bold;
-    border: none;
-    flex: 1 1 auto;
-}
-
-.final-pedido:focus {
-    background-color: var(--color-cont);
-}
-
 .text-msg {
     text-indent: 8px;
     padding: 5px;
 }
 
+/* footer */
 footer {
     background-color: var(--color-footer);
     color: #a7a7a7;
