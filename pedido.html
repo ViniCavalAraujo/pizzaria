@@ -113,38 +113,44 @@
                 </legend>
 
                 <!-- <div class="background-form"> -->
-                    <div class="pizza-combo">
+                    <div class="pizza-combo size">
                         <label for="combo">Pizza Combo</label>
                         <input type="checkbox" name="combo" id="combo">
                     </div>
-                    <div class="pizza-mussarela">
+
+                    <div class="pizza-mussarela size">
                         <label for="mussa">Mussarela</label>
                         <input type="checkbox" name="mussa" id="mussa">
                     </div>
-                    <div class="pizza-frango">
+
+                    <div class="pizza-frango size">
                         <label for="frango">Frango com Catupiry</label>
                         <input type="checkbox" name="frango" id="frango">
                     </div>
-                    <div class="pizza-atum">
+
+                    <div class="pizza-atum size">
                         <label for="atum">Atum</label>
                         <input type="checkbox" name="atum" id="atum">
                     </div>
-                    <div class="pizza-portuguesa">
+
+                    <div class="pizza-portuguesa size">
                         <label for="port">Portuguesa</label>
                         <input type="checkbox" name="port" id="port">
                     </div>
-                    <div class="pizza-nutella">
+
+                    <div class="pizza-nutella size">
                         <label for="nutella">Doce de Nutella</label>
                         <input type="checkbox" name="nutella" id="nutella">
                     </div>
-                    <div class="combo-doce">
+
+                    <div class="combo-doce size">
                         <label for="combodoce">Doce + Calabresa</label>
                         <input type="checkbox" name="combodoce" id="combodoce">
                     </div>
                 <!-- </div> -->
 
 
-                
+                <!-- amanhã acho que vou refazer esse form para os campos e o botão ficar elástico igual ao formulário da página de contato -->
                 <div class="nome-pedido">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" required placeholder="Nome">
@@ -155,7 +161,9 @@
                     <input type="text" name="tel" id="tel" required placeholder="Telefone:(xx)xxxxx-xxxx" pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$">
                 </div>
 
-                <button type="submit" class="final-pedido">Finalizar pedido</button>
+                <div class="button-form">
+                    <button type="submit" class="final-pedido">Finalizar pedido</button>
+                </div>
             </form>
         </section>
     </main>
