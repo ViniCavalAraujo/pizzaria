@@ -111,7 +111,6 @@ body {
 }
 
 
-
 .cont-menu {
    height: 340px;
    display: flex;
@@ -138,7 +137,6 @@ body {
     background-color: var(--color03);
 }
 
-
 .topo-menu {
     display: flex;
     flex-direction: row;
@@ -156,9 +154,8 @@ body {
     background-color: var(--color04);
 }
 
-
-.logo img{
-   width: 110px;
+.logo-header img{
+   width: 100%;
    z-index: 10;
    height: auto;
 } 
@@ -170,7 +167,6 @@ body {
     align-items: center;
 }
 
-
 #icone-menu {
     padding: 8px;
     background-color: #86342F;
@@ -180,7 +176,6 @@ body {
     z-index: 10;
     border: none;
 }
-
 
 .menu {
     position: absolute;
@@ -265,9 +260,6 @@ body {
     z-index: 1;
 }
 
-
-
-
 .cont-titulo h1, .cont-titulo p {
     color: white;
     font-weight: bold;
@@ -281,9 +273,6 @@ body {
 .cont-titulo > p {
     line-height: 1.4em;
 }
-
-
-
 
 .titulo-sobre {
     padding: 20px;
@@ -314,6 +303,9 @@ body {
     width: 60%;
     text-decoration: none;
     margin-top: 10px;
+    transition: 0.2s ease;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.329);
+    font-weight: bold;
 }
 
 .btn-header::before {
@@ -389,13 +381,13 @@ body {
     object-fit: cover;
 }
 
-.sobre {
+.sobre-home {
     padding: 20px;
     background-color: var(--color02);
     color: white;
 }
 
-.sobre p {
+.sobre-home p {
     color: white;
 }
 
@@ -748,6 +740,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.logos-footer > h4 {
+    display: none;
 }
 
 .acesso-github a {
