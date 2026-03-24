@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+/* telas médias (tablets) */
 @media (min-width: 768px) {
     /* página home */
     .cont-initial {
@@ -163,3 +165,73 @@
         margin: auto;
     }
 }
+
+
+/*telas desktop */
+@media (min-width: 992px) {
+    .cont-hamburguer {
+        display: none;
+    }
+
+    /* reset das propriedades */
+    .menu {
+        position: static;
+        top: auto;
+        max-height: none;
+        height: auto;
+        overflow: visible;
+        background-color: transparent;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .topo-menu {
+        height: 140px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        width: auto;
+        font-size: 1.2em;
+        padding: 12px;
+    }
+
+    .menu li {
+        height: auto;
+        width: auto;
+        padding: 0;
+        outline: none;
+        border: none;
+    }
+
+    .menu a {
+        padding: 10px 14px;
+        color: white;
+        white-space: nowrap;
+        font-size: 0.95em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu a:hover {
+        color: var(--color01);
+    }
+
+    /*header página sobre nós */
+    .menu-sobre a {
+        color: var(--color01);
+    }
+    .menu-sobre a:hover {
+        color: var(--color02);
+    }
+} 
