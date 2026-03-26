@@ -74,12 +74,13 @@
     .logopng-footer {
         content: url("../imagens/logo-m.png");
     }
+
    
     /* body da página pedido */
     .legend-form {
         font-size: 1.6em;
     }
-    .size {
+    .size-form {
         font-size: 1.1em;
     }
     .button-form {
@@ -98,6 +99,10 @@
     .titulo-sobre > p {
         padding-top: 10px;
         font-size: 1.2em;
+    }
+    .historia-article {
+        max-width: 550px;
+        margin: auto;
     }
     .historia-article > p {
         font-size: 1.1em;
@@ -130,6 +135,14 @@
     #fale-conosco > h3 {
         font-size: 1.4em;
     }
+
+    /* footer */
+    .logos-footer {
+        gap: 14px;
+    }
+    .logos-footer > h4 {
+        display: block;
+    }
 }
 
 /*config para uma melhor transição das imagens para celular/tablet */
@@ -142,13 +155,21 @@
 /*body página cardapio telas celulares/tablet */
 @media (min-width: 630px) {
     .titulo-cardapio {
-        font-size: 2em;
+        font-size: 3.4em;
     }
     .cont-pizza {
         flex-direction: row;
     }
     .img-config {
         width: 240px;
+    }
+    .cont-pedido > h3 {
+        font-size: 2em;
+    }
+    .btn-pedido {
+        padding: 13px;
+        width: 180px;
+        font-size: 1.5em;
     }
 }
 
@@ -364,7 +385,86 @@
     }
 
    
-    
+    /* página cardápio */
+
+    .titulo-cardapio {
+        padding: 10px;
+        font-size: 5em;
+        margin-bottom: 20px;
+    }
+
+    .cardapios {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        flex: 1 1 150px;
+    } 
+
+    .cont-pizza {
+        flex-direction: column;
+        max-width: 350px;
+        height: 540px;
+        transition: transform 0.4s ease;
+        font-size: 1.1em;
+    }
+
+    .cont-pizza:hover {
+        transform: scale(1.05);
+    }
+
+    .img-config {
+        width: 100%;
+    }
+
+    .cont-pedido > h3 {
+        font-size: 2.3em;
+    }
+
+    .btn-pedido {
+        padding: 15px;
+        width: 200px;
+        font-size: 1.7em;
+    }
+
+    /* página pedido */
+    .size-form {
+        font-size: 1.3em;
+    }
+    .nome-pedido input, .tel-pedido input {
+        padding: 10px;
+        width: 250px;
+    }
+
+    .nome-pedido input::placeholder, .tel-pedido input::placeholder {
+        font-size: 1.2em;
+    }
+    .button-form {
+        width: 250px;
+    }
+    .final-pedido:hover {
+        background-color: var(--color02);
+    }
+
+    /* página sobre nós */
+    .titulo-sobre > h1 {
+        padding-bottom: 14px;
+        font-size: 2.4em;
+    }
+    .titulo-sobre > p {
+        padding-top: 14px;
+        font-size: 1.4em;
+    }
+    .historia-article {
+        max-width: 650px;
+        margin: auto;
+    }
+    .titulo-tradicao {
+        padding: 30px 0px;
+        font-size: 4em;
+    }
 
     /*header página sobre nós */
     .menu-sobre a {

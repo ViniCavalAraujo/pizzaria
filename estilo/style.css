@@ -41,6 +41,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color04);
 }
 
 
@@ -454,16 +455,17 @@ body {
     text-align: center;
     padding: 20px;
     color: var(--color01);
+    font-family: "Tangerine", Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    margin: 10px 0px;
 }
+
 .cardapios {
     font-family: "Tangerine", Arial, Helvetica, sans-serif;
     font-size: 2em;
 }
 
-.cardapios > h2 {
-    margin-top: 20px;
-    padding-top: 20px;
-}
+
 
 .cont-pizza {
     background-color: #592D2C;
@@ -484,8 +486,7 @@ body {
 }
 
 /* margin acima e abaixo dos cards, exceto no primeiro card */
-.cont-pizza:not(#pizza-combo) {
-    margin-top: 10vh;
+.cont-pizza {
     margin-bottom: 10vh;
 }
 
@@ -515,6 +516,10 @@ picture {
     font-size: 0.6em;
 }
 
+.cont-pedido > h3 {
+    font-size: 2em;
+}
+
 .btn-pedido{
   padding: 12px;
   background: var(--color01);
@@ -524,6 +529,8 @@ picture {
   cursor: pointer;
   text-decoration: none;
   font-weight: bolder;
+  font-size: 1.4em;
+  text-align: center;
 }
 
 
@@ -542,10 +549,11 @@ picture {
     font-size: 1.2em;
 }
 
-.form-pedido > div {
+.size-form {
     display: flex;
     gap: 10px;
 }
+
 
 .nome-pedido input, .tel-pedido input {
     padding: 4px;
@@ -566,6 +574,7 @@ picture {
     font-weight: bold;
     border: none;
     flex: 1 1 auto;
+    cursor: pointer;
 }
 
 .final-pedido:focus {
