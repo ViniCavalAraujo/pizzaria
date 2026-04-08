@@ -149,10 +149,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 2;
-}
-
-.topo-sobre {
-    background-color: var(--color04);
+    
 }
 
 .logo-header img{
@@ -562,6 +559,29 @@ picture {
 .nome-pedido label, .tel-pedido label {
     display: none;
 }
+
+.card-pizza {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  background: white;
+  width: 140px;
+  height: 120px;
+  text-align: center;
+  gap: 10px;
+}
+
+/* quando o checkbox dentro estiver marcado, muda o card */
+.card-pizza:has(input:checked) {
+  background-color: var(--color01);
+  color: white;
+}
+
 
 .button-form {
     display: flex;

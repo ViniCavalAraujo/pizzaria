@@ -430,6 +430,7 @@
     }
 
     /* página pedido */
+    
     .size-form {
         font-size: 1.3em;
     }
@@ -466,11 +467,29 @@
         font-size: 4em;
     }
 
+
     /*header página sobre nós */
     .menu-sobre a {
         color: var(--color01);
     }
     .menu-sobre a:hover {
         color: var(--color02);
+    }
+
+    /* página contato */
+    .tel-contato > a{
+        width: 220px;
+    }
+    .wpp-contato {
+        width: 220px;
+    }
+
+    #formulario-contato {
+        max-width: 650px;
+        margin: auto;
+    }
+
+    textarea {
+        resize: vertical;
     }
 } 

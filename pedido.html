@@ -62,7 +62,7 @@
             <div class="topo-menu">
                 <div class="logo-header">
                     <a href="index.html">
-                        <img src="imagens/logo-p.png" alt="">
+                        <img src="imagens/logo-p.png" alt="Logo">
                     </a>
                 </div>
 
@@ -117,45 +117,66 @@
 
                 
                     <div class="pizza-combo size-form">
-                        <label for="combo">Pizza Combo</label>
-                        <input type="checkbox" name="combo" id="combo">
+                        <label class="card-pizza">
+                            <input type="checkbox" name="pizza" id="combo" hidden>
+                            <span class="nome">Pizza Combo</span>
+                            <span class="preco">R$ 49,90</span>
+                        </label>
                     </div>
 
                     <div class="pizza-mussarela size-form">
-                        <label for="mussa">Mussarela</label>
-                        <input type="checkbox" name="mussa" id="mussa">
+                        <label class="card-pizza">
+                            <input type="checkbox" name="pizza" id="mussarela" hidden>
+                            <span class="nome">Pizza Mussarela</span>
+                            <span class="preco">R$ 49,90</span>
+                        </label>
                     </div>
 
                     <div class="pizza-frango size-form">
-                        <label for="frango">Frango com Catupiry</label>
-                        <input type="checkbox" name="frango" id="frango">
+                        <label class="card-pizza">
+                            <input type="checkbox" name="pizza" id="frango" hidden>
+                            <span class="nome">Pizza Frango</span>
+                            <span class="preco">R$ 49,90</span>
+                        </label>
                     </div>
 
                     <div class="pizza-atum size-form">
-                        <label for="atum">Atum</label>
-                        <input type="checkbox" name="atum" id="atum">
+                        <label class="card-pizza">
+                            <input type="checkbox" name="pizza" id="atum" hidden>
+                            <span class="nome">Pizza Atum</span>
+                            <span class="preco">R$ 49,90</span>
+                        </label>
                     </div>
 
                     <div class="pizza-portuguesa size-form">
-                        <label for="port">Portuguesa</label>
-                        <input type="checkbox" name="port" id="port">
+                         <label class="card-pizza">
+                            <input type="checkbox" name="pizza" id="portuguesa" hidden>
+                            <span class="nome">Pizza Portuguesa</span>
+                            <span class="preco">R$ 49,90</span>
+                        </label>
                     </div>
 
                     <div class="pizza-nutella size-form">
-                        <label for="nutella">Doce de Nutella</label>
-                        <input type="checkbox" name="nutella" id="nutella">
+                         <label class="card-pizza">
+                            <input type="checkbox" name="pizza" id="nutella" hidden>
+                            <span class="nome">Pizza Nutella</span>
+                            <span class="preco">R$ 49,90</span>
+                        </label>
                     </div>
 
                     <div class="combo-doce size-form">
-                        <label for="combodoce">Doce + Calabresa</label>
-                        <input type="checkbox" name="combodoce" id="combodoce">
+                         <label class="card-pizza">
+                            <input type="checkbox" name="pizza" id="combodoce" hidden>
+                            <span class="nome">Combo Doce</span>
+                            <span class="preco">R$ 49,90</span>
+                        </label>
                     </div>
 
 
 
                 <div class="nome-pedido">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" required placeholder="Nome">
+                    <input type="text" name="nomepedido" id="nomepedido" required placeholder="Nome">
                 </div>
 
                 <div class="tel-pedido">
@@ -164,7 +185,7 @@
                 </div>
 
                 <div class="button-form">
-                    <button type="submit" class="final-pedido">Finalizar pedido</button>
+                    <button type="submit" class="final-pedido" onclick="validarPedido()">Finalizar pedido</button>
                 </div>
             </form>
         </section>
@@ -241,8 +262,8 @@
             </div>
     </footer>
 
-
-    <script>
+    <script src="script.js"></script>
+    <!-- <script>
         function clickMenu() {
             const menu = document.getElementById("itens")
             const icone = document.getElementById("icone-menu")
@@ -263,8 +284,6 @@
             menu.classList.remove("ativo")
             icone.textContent = "menu"
         }
-
-        
-    </script>
+    </script> -->
 </body>
 </html>

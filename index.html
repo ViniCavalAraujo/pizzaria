@@ -63,24 +63,12 @@
 
             <div class="topo-menu">
                 <div class="logo-header">
-                    <!-- <picture> -->
-                        <!-- <source media="(min-width: 768px)" srcset="imagens/logom.png"> -->
                         <a href="#">
-                            <img src="imagens/logo-p.png" alt="">
+                            <img src="imagens/logo-p.png" alt="Logo">
                         </a>
-                    <!-- </picture> -->
                 </div>
             
-                <!-- <div class="teste">
-                    <ul>
-                        <li><a href="">Teste</a></li>
-                        <li><a href="">Teste</a></li>
-                        <li><a href="">Teste</a></li>
-                        <li><a href="">Teste</a></li>
-                        <li><a href="">Teste</a></li>
-                    </ul>
-                </div> menu que fiz pra testar -->
-
+                
                 <div class="cont-hamburguer">
                      <button id="icone-menu" class="material-symbols-outlined" onclick="clickMenu()">
                         menu
@@ -96,7 +84,6 @@
                                 <a href="cardapio.html#menu-cardapio" onclick="fecharMenu()">Cardápio</a>
                             </li>
                             <li>
-                                <!-- talvez eu mude pra outra coisa -->
                                 <a href="pedido.html" onclick="fecharMenu()">Faça seu pedido</a>
                             </li>
                             <li>
@@ -260,7 +247,9 @@
             </div>
     </footer>
     
-    <script>
+    <script src="script.js"></script>
+
+    <!-- <script>
         function clickMenu() {
             const menu = document.getElementById("itens")
             const icone = document.getElementById("icone-menu")
@@ -281,6 +270,6 @@
             menu.classList.remove("ativo")
             icone.textContent = "menu"
         }
-    </script>
+    </script> -->
 </body>
 </html>
