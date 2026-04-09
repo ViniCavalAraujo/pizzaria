@@ -553,7 +553,7 @@ picture {
 
 
 .nome-pedido input, .tel-pedido input {
-    padding: 4px;
+    padding: 8px;
 }
 
 .nome-pedido label, .tel-pedido label {
@@ -569,24 +569,32 @@ picture {
   border: 1px solid var(--color04);
   border-radius: 10px;
   cursor: pointer;
-  background-color: var(--color01);
+  background-color: var(--color04);
+  color: var(--color02);
   width: 140px;
   height: 120px;
   text-align: center;
   gap: 10px;
 }
 
+.cont-clique {
+    display: flex;
+    flex-direction: column;
+}
+
 /* quando o checkbox dentro estiver marcado, muda o card */
 .card-pizza:has(input:checked) {
   background-color: var(--color01);
-  color: blue;
+  color: var(--color04);
 }
 
+
+
 .size-pedido {
-    max-width: 400px;
     max-height: 180px;
     flex-direction: row;
     padding: 20px;
+    gap: 10px;
 }
 
 .size-pedido img {
@@ -594,6 +602,15 @@ picture {
     height: 40px;
 }
 
+.clique {
+    font-size: 0.8em;
+}
+
+.nome-pizza, .preco {
+    font-weight: bold;
+}
+ 
+ 
 .infos-pedido {
     font-size: 0.8em;
     max-width: 170px;
@@ -602,12 +619,9 @@ picture {
 
 
 
-.button-form {
-    display: flex;
-}
-
 .final-pedido {
-    padding: 10px;
+    padding: 12px;
+    width: 180px;
     color: white;
     background-color: var(--color01);
     font-weight: bold;
