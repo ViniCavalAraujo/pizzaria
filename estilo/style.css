@@ -482,7 +482,7 @@ body {
     color: white;
 }
 
-/* margin acima e abaixo dos cards, exceto no primeiro card */
+
 .cont-pizza {
     margin-bottom: 10vh;
 }
@@ -566,10 +566,10 @@ picture {
   align-items: center;
   justify-content: center;
   padding: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color04);
   border-radius: 10px;
   cursor: pointer;
-  background: white;
+  background-color: var(--color01);
   width: 140px;
   height: 120px;
   text-align: center;
@@ -579,8 +579,27 @@ picture {
 /* quando o checkbox dentro estiver marcado, muda o card */
 .card-pizza:has(input:checked) {
   background-color: var(--color01);
-  color: white;
+  color: blue;
 }
+
+.size-pedido {
+    max-width: 400px;
+    max-height: 180px;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.size-pedido img {
+    width: 40px;
+    height: 40px;
+}
+
+.infos-pedido {
+    font-size: 0.8em;
+    max-width: 170px;
+    line-height: 1.6em;
+}
+
 
 
 .button-form {

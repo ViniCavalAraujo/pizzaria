@@ -116,13 +116,27 @@
                 </legend>
 
                 
-                    <div class="pizza-combo size-form">
+                    <!-- <div class="pizza-combo size-form">
                         <label class="card-pizza">
                             <input type="checkbox" name="pizza" id="combo" hidden>
                             <span class="nome">Pizza Combo</span>
                             <span class="preco">R$ 49,90</span>
                         </label>
+                    </div> -->
+                    <div class="cont-pizza size-pedido" id="pizza-combo">
+                        <label class="card-pizza">
+                            <input type="checkbox" name="pizza" id="combo" hidden>
+                            <span class="nome">Pizza Combo</span>
+                            <span class="preco">R$ 49,90</span>
+                        </label>
+                        <div class="infos-pedido">
+                            <p>
+                                Uma combinação especial de sabores para quem gosta de variedade.
+                                Perfeita para dividir e experimentar diferentes ingredientes em uma só pizza.
+                            </p>
+                        </div>
                     </div>
+
 
                     <div class="pizza-mussarela size-form">
                         <label class="card-pizza">
@@ -176,12 +190,12 @@
 
                 <div class="nome-pedido">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nomepedido" id="nomepedido" required placeholder="Nome">
+                    <input type="text" name="nome-pedido" id="nome-pedido" required placeholder="Nome">
                 </div>
 
                 <div class="tel-pedido">
                     <label for="tel">Telefone</label>
-                    <input type="text" name="tel" id="tel" required placeholder="Telefone:(xx)xxxxx-xxxx" pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$">
+                    <input type="text" name="tel-pedido" id="tel-pedido" required placeholder="Telefone:(xx)xxxxx-xxxx">
                 </div>
 
                 <div class="button-form">

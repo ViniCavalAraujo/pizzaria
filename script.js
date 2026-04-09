@@ -1,31 +1,34 @@
-const input = document.getElementById('telefone')
 
-        input.addEventListener('input', function(){
-         // 1. pega só números
-        let numeros = input.value.replace(/\D/g, '');
+function validacaoTelefone(input) {
+    input.addEventListener('input', function(){
+        let numeros = input.value.replace(/\D/g, '')
+        numeros = numeros.substring(0, 11)
+        let resultado = ''
 
-         // 2. limita tamanho (DDD + número)
-         numeros = numeros.substring(0, 11);
-
-         let resultado = '';
-
-        // 3. monta o DDD
         if (numeros.length >= 1) {
-             resultado += '(' + numeros.substring(0, 2);
-         }
-
-         // 4. monta o resto
+            resultado += '(' + numeros.substring(0, 2)
+        }
         if (numeros.length >= 3) {
-             resultado += ') ' + numeros.substring(2, 7);
-         }
+            resultado += ') ' + numeros.substring(2, 7)
+        }
+        if (numeros.length >= 8) {
+            resultado += '-' + numeros.substring(7)
+        }
 
-        // 5. coloca o traço
-         if (numeros.length >= 8) {
-            resultado += '-' + numeros.substring(7);
-         }
-        // 6. atualiza o input
-        input.value = resultado;
-})
+        input.value = resultado
+    })
+}
+
+const inputContato = document.getElementById('tel-contato')
+const inputPedido = document.getElementById('tel-pedido')
+
+if (inputContato) {
+    validacaoTelefone(inputContato)
+}
+
+if (inputPedido) {
+    validacaoTelefone(inputPedido)
+}
 
 
 
@@ -52,10 +55,14 @@ function fecharMenu() {
 
 function validarPedido() {
     const item = document.getElementsByName('pizza')
-    const input = document.getElementById('nomepedido')
-    const nome = input.value
-    
-    if (item[0].checked) {
-        alert('teste')
+    const inputnome = document.getElementById('nome-pedido')
+    const nome = inputnome.value
+    const input_tel = document.getElementById('tel-pedido')
+    const tel = input_tel.value
+
+    if (nome != '' && tel != '') {
+        if(item[0].checked) {
+            alert('teste')
+        }
     }
 }
