@@ -67,3 +67,15 @@ function validarPedido() {
     }
 }
 
+function calcularTotal() {
+    const cards = document.querySelectorAll('.card-pizza input[type="checkbox"]')
+    let total = 0
+
+    cards.forEach(function(card) {
+        if (card.checked) {
+            total += parseFloat(card.dataset.preco)
+        }
+    })
+
+    document.getElementById('total').textContent = 'Total: R$ ' + total.toFixed(2)
+}

@@ -128,8 +128,8 @@
                             <span class="clique">Clique</span>
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </div>
-                        <label class="card-pizza">
-                            <input type="checkbox" name="pizza" id="combo" hidden>
+                        <label class="card-pizza" onclick="calcularTotal()">
+                            <input type="checkbox" name="pizza" id="combo" hidden data-preco="49.90">
                             <span class="nome-pizza">Pizza Combo</span>
                             <span class="preco">R$ 49,90</span>
                         </label>
@@ -142,13 +142,13 @@
                     </div>
 
 
-                    <div class="cont-pizza size-pedido">
+                    <div class="cont-pizza size-pedido" onclick="calcularTotal()">
                         <div class="cont-clique">
                             <span class="clique">Clique</span>
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </div>
                         <label class="card-pizza">
-                            <input type="checkbox" name="pizza" id="mussarela" hidden>
+                            <input type="checkbox" name="pizza" id="mussarela" hidden data-preco="49.90">
                             <span class="nome-pizza">Pizza Mussarela</span>
                             <span class="preco">R$ 49,90</span>
                         </label>
@@ -164,10 +164,10 @@
                             <span class="clique">Clique</span>
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </div>
-                        <label class="card-pizza">
-                            <input type="checkbox" name="pizza" id="frango" hidden>
+                        <label class="card-pizza" onclick="calcularTotal()">
+                            <input type="checkbox" name="pizza" id="frango" hidden data-preco="45.90">
                             <span class="nome-pizza">Pizza Frango</span>
-                            <span class="preco">R$ 49,90</span>
+                            <span class="preco">R$ 45,90</span>
                         </label>
                         <div class="infos-pedido">
                             <p>
@@ -182,10 +182,10 @@
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </div>
                         </span>
-                        <label class="card-pizza">
-                            <input type="checkbox" name="pizza" id="atum" hidden>
+                        <label class="card-pizza" onclick="calcularTotal()">
+                            <input type="checkbox" name="pizza" id="atum" hidden data-preco="47.90">
                             <span class="nome-pizza">Pizza Atum</span>
-                            <span class="preco">R$ 49,90</span>
+                            <span class="preco">R$ 47,90</span>
                         </label>
                         <div class="infos-pedido">
                             <p>
@@ -199,8 +199,8 @@
                             <span class="clique">Clique</span>
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </div>
-                         <label class="card-pizza">
-                            <input type="checkbox" name="pizza" id="portuguesa" hidden>
+                         <label class="card-pizza" onclick="calcularTotal()">
+                            <input type="checkbox" name="pizza" id="portuguesa" hidden data-preco="49.90">
                             <span class="nome-pizza">Pizza Portuguesa</span>
                             <span class="preco">R$ 49,90</span>
                         </label>
@@ -216,8 +216,8 @@
                             <span class="clique">Clique</span>
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </div>
-                         <label class="card-pizza">
-                            <input type="checkbox" name="pizza" id="nutella" hidden>
+                         <label class="card-pizza" onclick="calcularTotal()">
+                            <input type="checkbox" name="pizza" id="nutella" hidden data-preco="49.90">
                             <span class="nome-pizza">Pizza Marguerita</span>
                             <span class="preco">R$ 49,90</span>
                         </label>
@@ -233,10 +233,10 @@
                             <span class="clique">Clique</span>
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </div>
-                         <label class="card-pizza">
-                            <input type="checkbox" name="pizza" id="nutella" hidden>
+                         <label class="card-pizza" onclick="calcularTotal()">
+                            <input type="checkbox" name="pizza" id="nutella" hidden data-preco="55.90">
                             <span class="nome-pizza">Pizza Nutella</span>
-                            <span class="preco">R$ 49,90</span>
+                            <span class="preco">R$ 55,90</span>
                         </label>
                         <div class="infos-pedido">
                             <p>
@@ -250,10 +250,10 @@
                             <span class="clique">Clique</span>
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </div>
-                         <label class="card-pizza">
-                            <input type="checkbox" name="pizza" id="combodoce" hidden>
+                         <label class="card-pizza" onclick="calcularTotal()">
+                            <input type="checkbox" name="pizza" id="combodoce" hidden data-preco="59,99">
                             <span class="nome-pizza">Bomba Doce</span>
-                            <span class="preco">R$ 49,90</span>
+                            <span class="preco">R$ 59,99</span>
                         </label>
                         <div class="infos-pedido">
                             <p>
@@ -267,10 +267,10 @@
                             <span class="clique">Clique</span>
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </div>
-                         <label class="card-pizza">
-                            <input type="checkbox" name="pizza" id="combodoce" hidden>
+                         <label class="card-pizza" onclick="calcularTotal()">
+                            <input type="checkbox" name="pizza" id="combodoce" hidden data-preco="72.99">
                             <span class="nome-pizza">Combo Doce</span>
-                            <span class="preco">R$ 49,90</span>
+                            <span class="preco">R$ 72,99</span>
                         </label>
                         <div class="infos-pedido">
                             <p>
@@ -279,7 +279,8 @@
                         </div>
                     </div>
 
-                    <p>Implementar lógica de valor total aqui conforme item selecionado</p>
+                    <p id="total">Total: R$ 0,00</p>
+
 
                 <div class="nome-pedido">
                     <label for="nome">Nome</label>
