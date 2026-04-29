@@ -54,16 +54,33 @@ function fecharMenu() {
 }
 
 function validarPedido() {
-    const item = document.getElementsByName('pizza')
-    const inputnome = document.getElementById('nome-pedido')
-    const nome = inputnome.value
-    const input_tel = document.getElementById('tel-pedido')
-    const tel = input_tel.value
+    const cards = document.querySelectorAll('.card-pizza input[type="checkbox"]')
+    const nome = document.getElementById('nome-pedido')
+    const tel = document.getElementById('tel-pedido')
+    let algumMarcado = false
 
-    if (nome != '' && tel != '') {
-        if(item[0].checked) {
-            alert('teste')
+    cards.forEach(function(card) {
+        if (card.checked) {
+            algumMarcado = true
         }
+    })
+
+    if (!algumMarcado) {
+        alert('Selecione pelo menos uma pizza!')
+    } else if (nome.value == '' || tel.value == '') {
+        alert('Preencha seu nome e telefone!')
+    } else {
+        alert('Pedido realizado!')
+        nome.value = ''
+        tel.value = ''
+
+        // desmarca os cards
+        cards.forEach(function(card) {
+            card.checked = false
+        })
+
+        // atualiza o total (zera)
+        calcularTotal()
     }
 }
 

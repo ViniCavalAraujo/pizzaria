@@ -595,6 +595,7 @@ picture {
     flex-direction: row;
     padding: 20px;
     gap: 10px;
+    transition: transform 0.4s ease;
 }
 
 .size-pedido img {

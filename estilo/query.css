@@ -80,9 +80,9 @@
     .legend-form {
         font-size: 1.6em;
     }
-    .size-form {
+    /* .size-form {
         font-size: 1.1em;
-    }
+    } */
     .button-form {
         width: 200px;
     }
@@ -403,7 +403,7 @@
         flex: 1 1 150px;
     } 
 
-    .cont-pizza {
+    .cont-pizza:not(.size-pedido) {
         flex-direction: column;
         max-width: 350px;
         height: 540px;
@@ -411,7 +411,7 @@
         font-size: 1.1em;
     }
 
-    .cont-pizza:hover {
+    .cont-pizza:not(.size-pedido):hover {
         transform: scale(1.05);
     }
 
@@ -430,10 +430,10 @@
     }
 
     /* página pedido */
-    
-    .size-form {
-        font-size: 1.3em;
+    .size-pedido:hover {
+        transform: scale(1.05);
     }
+
     .nome-pedido input, .tel-pedido input {
         padding: 10px;
         width: 250px;
