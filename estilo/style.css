@@ -555,8 +555,8 @@ picture {
   cursor: pointer;
   background-color: var(--color04);
   color: var(--color02);
-  width: 140px;
-  height: 120px;
+  min-width: 120px;
+  min-height: 120px;
   text-align: center;
   gap: 10px;
 }
@@ -574,7 +574,7 @@ picture {
 
 
 .size-pedido {
-    max-height: 180px;
+    min-height: 180px;
     flex-direction: row;
     padding: 20px;
     gap: 10px;
