@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 
-/* amanhã decidir entre a font tangerine ou parisienne, achei as duas muito boas */
-
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Tangerine:wght@400;700&display=swap');
 
@@ -13,13 +11,11 @@
     font-weight: bold;
 }
 
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 
 :root {
     --color01: #86342F;
@@ -31,9 +27,6 @@
     --color-footer: #2E4052;
 }
 
-/* talvez eu aumente o max-width dos containers para 550px pensar depois */
-
-
 html {
     /* permite rolamento suave ao descer a página quando clica em um link direcionado a um elemento */
     scroll-behavior: smooth;
@@ -43,12 +36,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color04);
 }
-
-
-/* header {
-    max-width: 550px;
-    margin: auto;
-} */
 
 .cont-initial {
     padding: 10px 20px 10px 20px;
@@ -288,8 +275,6 @@ body {
     padding-top: 5px;
 }
 
-
-
 .btn-header {
     position: relative;
     overflow: hidden;
@@ -336,7 +321,6 @@ body {
     padding: 10px;
     margin: 5px 0px;
 }
-/* -----------------------------------------------------------------*/
 
 /* body página home */
 .cont-home {
@@ -588,10 +572,8 @@ picture {
   color: var(--color04);
 }
 
-
-
 .size-pedido {
-    max-height: 180px;
+    min-height: 180px;
     flex-direction: row;
     padding: 20px;
     gap: 10px;

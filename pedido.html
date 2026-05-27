@@ -81,7 +81,6 @@
                                 <a href="cardapio.html#menu-cardapio" onclick="fecharMenu()">Cardápio</a>
                             </li>
                             <li>
-                                <!-- talvez eu mude pra outra coisa -->
                                 <a href="#realizar-pedido" onclick="fecharMenu()">Faça seu pedido</a>
                             </li>
                             <li>
@@ -114,15 +113,6 @@
                 <legend class="legend-form">
                     <strong>Faça seu pedido</strong>
                 </legend>
-
-                
-                    <!-- <div class="pizza-combo size-form">
-                        <label class="card-pizza">
-                            <input type="checkbox" name="pizza" id="combo" hidden>
-                            <span class="nome">Pizza Combo</span>
-                            <span class="preco">R$ 49,90</span>
-                        </label>
-                    </div> -->
                     <div class="cont-pizza size-pedido" id="pizza-combo">
                         <div class="cont-clique">
                             <span class="clique">Clique</span>
@@ -251,7 +241,7 @@
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </div>
                          <label class="card-pizza" onclick="calcularTotal()">
-                            <input type="checkbox" name="pizza" id="combodoce" hidden data-preco="59,99">
+                            <input type="checkbox" name="pizza" id="combodoce" hidden data-preco="59.99">
                             <span class="nome-pizza">Bomba Doce</span>
                             <span class="preco">R$ 59,99</span>
                         </label>
@@ -371,27 +361,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <!-- <script>
-        function clickMenu() {
-            const menu = document.getElementById("itens")
-            const icone = document.getElementById("icone-menu")
-
-            menu.classList.toggle("ativo")
-
-            if(menu.classList.contains("ativo")){
-                icone.textContent = "close"
-            } else {
-                icone.textContent = "menu"
-            }
-        }
-
-        function fecharMenu() {
-            const menu = document.getElementById("itens")
-            const icone = document.getElementById("icone-menu")
-
-            menu.classList.remove("ativo")
-            icone.textContent = "menu"
-        }
-    </script> -->
 </body>
 </html>

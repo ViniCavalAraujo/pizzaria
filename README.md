@@ -1,4 +1,4 @@
 # pizzaria
-Projeto de um site de pizzaria, com foco em boas práticas de flexbox e responsividade 
+Site fictício de uma pizzaria desenvolvido para praticar HTML, CSS e JavaScript
 
-(EM DESENVOLVIMENTO)
+[Clique aqui para ver o site](https://vinicavalaraujo.github.io/pizzaria/index.html)

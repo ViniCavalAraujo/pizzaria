@@ -80,9 +80,6 @@
     .legend-form {
         font-size: 1.6em;
     }
-    /* .size-form {
-        font-size: 1.1em;
-    } */
     .button-form {
         width: 200px;
     }
@@ -144,13 +141,6 @@
         display: block;
     }
 }
-
-/*config para uma melhor transição das imagens para celular/tablet */
-/* @media (min-width: 530px) and (max-width: 620px) {
-    .img-config {
-        max-width: 82%;
-    }
-} */
 
 /*body página cardapio telas celulares/tablet */
 @media (min-width: 630px) {
