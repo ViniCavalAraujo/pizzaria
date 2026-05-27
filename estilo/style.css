@@ -572,8 +572,9 @@ picture {
   color: var(--color04);
 }
 
+
 .size-pedido {
-    min-height: 180px;
+    max-height: 180px;
     flex-direction: row;
     padding: 20px;
     gap: 10px;
